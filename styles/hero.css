@@ -1,0 +1,216 @@
+/* Hero Styles */
+.hero {
+  background-image: url('../assets/bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  line-height: 100%;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 4.0625rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: -1.3rem;
+  margin-bottom: 30px;
+}
+.search-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  background: transparent;
+}
+
+.search-input-group {
+  width: 549px;
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  overflow: hidden;
+  background: transparent;
+  align-items: center;
+}
+
+/* Search icon on RIGHT side */
+.search-icon {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: white;
+  font-size: 16px;
+}
+
+/* Input field */
+.search-input-group input {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+}
+
+.search-input-group input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+/* Location button */
+.location-dropdown {
+  position: relative;
+}
+
+.location-button {
+  width: 9.5625rem;
+  background-color: #e6491e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 32px;
+  font-weight: 600;
+  font-size: .875rem;
+  cursor: pointer;
+}
+.location-button i{
+  margin-left: 1.5rem;
+}
+/* Laptop: 1024px */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1.25rem;
+  }
+
+  .search-input-group {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .location-button {
+    width: 9rem;
+    font-size: 0.85rem;
+    padding: 10px 16px;
+  }
+}
+
+/* Tablet: 768px */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 20px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-input-group {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .location-button {
+    width: 100%;
+  }
+}
+
+/* Mobile: 425px */
+@media (max-width: 425px) {
+  .hero-content {
+    padding: 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .search-input-group input {
+    font-size: 0.95rem;
+    padding: 10px 16px;
+  }
+
+  .search-icon {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .location-button {
+    font-size: 0.8rem;
+    padding: 10px 16px;
+  }
+}
+
+/* Small Mobile: 375px */
+@media (max-width: 375px) {
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .search-input-group input {
+    font-size: 0.9rem;
+  }
+
+  .location-button {
+    font-size: 0.75rem;
+    padding: 9px 14px;
+  }
+}
